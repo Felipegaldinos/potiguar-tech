@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Potiguar Tech</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/img/logo-remove.png" type="image/x-icon">
+  <title>Potiguar Tech</title>
+</head>
+<body>
+
+  <img src="/img/logo-remove.png" alt="Logo Potiguar Tech" class="logo" />
+
+  <a href="https://wa.me/seunumerowhatsapp" class="link-button" target="_blank">Fale com um especialista</a>
+  <a href="https://seusite.com" class="link-button" target="_blank">Acesse nosso site</a>
+ <!-- <a href="https://blog.seusite.com" class="link-button" target="_blank">Conheça nosso Blog</a> -->
+
+<!-- Banner de Consentimento de Cookies -->
+<div id="cookie-banner" class="cookie-banner">
+  <p>
+    Utilizamos cookies para personalizar conteúdos e melhorar sua experiência em nosso site. Ao aceitar, você concorda com o uso de cookies conforme nossa Política de Privacidade.
+  </p>
+  <div class="cookie-buttons">
+    <button class="btn btn-aceitar" onclick="aceitarCookies()">Aceitar todos os cookies</button>
+    <button class="btn btn-rejeitar" onclick="rejeitarCookies()">Rejeitar Todos</button>
+    <button class="btn btn-definicoes" onclick="abrirDefinicoes()">Definições de cookies</button>
+  </div>
+</div>
+
+  <footer>
+    © 2025 Potiguar Tech. Todos os direitos reservados.
+  </footer>
+  <script>
+    function setCookie(nome, valor, dias) {
+      const d = new Date();
+      d.setTime(d.getTime() + (dias*24*60*60*1000));
+      document.cookie = nome + "=" + valor + ";path=/;expires=" + d.toUTCString();
+    }
+  
+    function getCookie(nome) {
+      const cname = nome + "=";
+      const decoded = decodeURIComponent(document.cookie);
+      const ca = decoded.split(';');
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(cname) === 0) return c.substring(cname.length, c.length);
+      }
+      return "";
+    }
+  
+    function aceitarCookies() {
+      setCookie("cookies_aceitos", "true", 365);
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+  
+    function rejeitarCookies() {
+      setCookie("cookies_aceitos", "false", 365);
+      document.getElementById("cookie-banner").style.display = "none";
+    }
+  
+    function abrirDefinicoes() {
+    window.location.href = "cookies.html"; // <- Aqui está o caminho
+  }
+  
+    if (!getCookie("cookies_aceitos")) {
+      document.getElementById("cookie-banner").style.display = "block";
+    }
+  </script>
+  
+</body>
+</html>
