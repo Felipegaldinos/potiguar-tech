@@ -1,71 +1,322 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Potiguar Tech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PotiguarTech | Soluções Inteligentes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" href="/img/logo-remove.png" type="image/x-icon">
-  <title>Potiguar Tech</title>
 </head>
 <body>
+  <!-- Hero -->
+  <section class="hero reveal from-bottom">
+    <div class="container">
+      <img src="/img/logo-remove.png" alt="Logo PotiguarTech" class="logo-hero">
+  
+      <div class="hero-title">
+        <h1>Desenvolvimento de Sites<br>e Sistemas Sob Medida</h1>
+        <p>Transformamos ideias em soluções digitais eficientes para empresas que buscam inovação e crescimento.</p>
+      </div>
+  
+      <a href="#contato" class="cta-btn">Fazer Orçamento</a>
+  
+      <img src="https://cdn-icons-png.flaticon.com/512/3845/3845731.png" alt="Dispositivos Web" class="hero-bg-img">
+  
+      <div class="scroll-down">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+  </section>
 
-  <img src="/img/logo-remove.png" alt="Logo Potiguar Tech" class="logo" />
+  <!-- Serviços -->
+  <section class="servicos reveal from-left">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <p class="subtitulo">Soluções digitais pensadas para o crescimento da sua empresa</p>
 
-  <a href="https://wa.me/seunumerowhatsapp" class="link-button" target="_blank">Fale com um especialista</a>
-  <a href="https://seusite.com" class="link-button" target="_blank">Acesse nosso site</a>
- <!-- <a href="https://blog.seusite.com" class="link-button" target="_blank">Conheça nosso Blog</a> -->
+      <div class="conteudo-servicos">
+        <div class="servicos-grid">
+          <div class="servico-box">
+            <img src="icone-desenvolvimento.png" alt="Ícone Desenvolvimento" class="icone">
+            <h3>Desenvolvimento de Sistemas</h3>
+            <p>Criamos sistemas personalizados para atender às necessidades específicas da sua empresa.</p>
+          </div>
 
-<!-- Banner de Consentimento de Cookies -->
-<div id="cookie-banner" class="cookie-banner">
-  <p>
-    Utilizamos cookies para personalizar conteúdos e melhorar sua experiência em nosso site. Ao aceitar, você concorda com o uso de cookies conforme nossa Política de Privacidade.
-  </p>
-  <div class="cookie-buttons">
-    <button class="btn btn-aceitar" onclick="aceitarCookies()">Aceitar todos os cookies</button>
-    <button class="btn btn-rejeitar" onclick="rejeitarCookies()">Rejeitar Todos</button>
-    <button class="btn btn-definicoes" onclick="abrirDefinicoes()">Definições de cookies</button>
+          <div class="servico-box">
+            <img src="icone-manutencao.png" alt="Ícone Manutenção" class="icone">
+            <h3>Manutenção</h3>
+            <p>Oferecemos manutenção contínua para garantir que seus sistemas funcionem perfeitamente.</p>
+          </div>
+
+          <div class="servico-box">
+            <img src="icone-suporte.png" alt="Ícone Suporte" class="icone">
+            <h3>Suporte</h3>
+            <p>Nosso time está disponível para resolver dúvidas e problemas com agilidade e eficiência.</p>
+          </div>
+
+          <div class="servico-box">
+            <img src="icone-otimizacao.png" alt="Ícone Otimização" class="icone">
+            <h3>Otimização</h3>
+            <p>Melhoramos a performance de sistemas e sites para resultados mais rápidos e eficazes.</p>
+          </div>
+        </div>
+
+        <div class="imagem-servico">
+          <img src="serviços.jpg" alt="Equipe trabalhando">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Números -->
+  <section class="nossos-numeros reveal from-right">
+    <div class="container-numeros">
+      <div class="box-esquerda">
+        <img src="sua-logo.png" alt="Logo" class="logo-numeros" />
+        <h2><span>nossos</span> <strong>números</strong></h2>
+      </div>
+
+      <div class="box-direita">
+        <div class="numero-item">
+          <h3>+175</h3>
+          <p>clientes em todo o Brasil</p>
+        </div>
+
+        <div class="numero-item">
+          <h3>+500</h3>
+          <p>projetos entregues</p>
+        </div>
+
+        <div class="numero-item">
+          <h3>+75</h3>
+          <p>milhões de acessos mensais</p>
+        </div>
+
+        <div class="numero-item">
+          <h3>+10</h3>
+          <p>anos de experiência</p>
+        </div>
+
+        <div class="numero-item">
+          <h3>+5</h3>
+          <p>servidores internacionais</p>
+        </div>
+
+        <div class="numero-extra">
+          <p>+ 3 TB de armazenamento de arquivos<br />+ 400 contas de e-mail institucional</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Projetos -->
+<section class="projetos reveal from-bottom">
+  <div class="container">
+    <h2>Nossos Projetos</h2>
+    <p class="subtitulo">Conheça algumas das soluções desenvolvidas sob medida</p>
+
+    <div class="projetos-grid">
+      <!-- Projeto 1 -->
+      <div class="projeto-card" onclick="abrirModal('modal1')">
+        <img src="/img/logo.jpg" alt="Projeto 1">
+        <h3>Sistema de Atendimento Integrado</h3>
+        <p>Automatização completa de processos internos para empresas de saúde.</p>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div class="projeto-card" onclick="abrirModal('modal2')">
+        <img src="/img/logo.jpg" alt="Projeto 2">
+        <h3>Plataforma de E-commerce</h3>
+        <p>Loja online desenvolvida para alta performance e escalabilidade.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Projeto 1 -->
+  <div id="modal1" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <h2>Sistema de Atendimento Integrado</h2>
+      <div class="modal-imagens">
+        <img src="/img/logo.jpg" alt="Imagem 1">
+        <img src="/img/logo.jpg" alt="Imagem 2">
+      </div>
+      <p>Este sistema permite o agendamento, triagem e atendimento com relatórios gerenciais integrados.</p>
+    </div>
+  </div>
+
+  <!-- Modal Projeto 2 -->
+  <div id="modal2" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <h2>Plataforma de E-commerce</h2>
+      <div class="modal-imagens">
+        <img src="/img/logo.jpg" alt="Imagem 1">
+        <img src="/img/logo.jpg" alt="Imagem 2">
+      </div>
+      <p>Uma plataforma robusta com carrinho otimizado, meios de pagamento integrados e painel de controle completo.</p>
+    </div>
+  </div>
+  <button class="botao-orcamento" onclick="openModalProjeto()">Outros projetos</button>
+
+</section>
+<!-- Modal de Projeto com Slider -->
+<div id="modalProjeto" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <div class="slider-container">
+      <div class="slider">
+        <img src="/img/logo.jpg" alt="Imagem 1" class="slide active">
+        <img src="/img/logo.jpg" alt="Imagem 2" class="slide">
+        <img src="/img/logo.jpg" alt="Imagem 3" class="slide">
+        <img src="/img/logo.jpg" alt="Imagem 4" class="slide">
+        <img src="/img/logo.jpg" alt="Imagem 5" class="slide">
+      </div>
+      <button class="slider-btn prev">&#10094;</button>
+      <button class="slider-btn next">&#10095;</button>
+    </div>
   </div>
 </div>
+  <!-- Depoimentos -->
+  <section class="clientes-dizem reveal from-left">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="depoimentos">
+      <div class="card-depoimento">
+        <div class="aspas">“</div>
+        <p>A equipe da C2 Tecnologia Web nos atendeu com excelência, desenvolvendo um sistema sob medida que superou nossas expectativas.</p>
+        <h4>João Silva</h4>
+      </div>
 
-  <footer>
-    © 2025 Potiguar Tech. Todos os direitos reservados.
+      <div class="card-depoimento">
+        <div class="aspas">“</div>
+        <p>Atendimento ágil e resultados concretos. Hoje nosso site é rápido, seguro e responsivo!</p>
+        <h4>Empresa Delta</h4>
+      </div>
+
+      <div class="card-depoimento">
+        <div class="aspas">“</div>
+        <p>Soluções modernas e suporte constante. Confio totalmente na parceria com essa equipe.</p>
+        <h4>Mariana Rocha</h4>
+      </div>
+
+      <div class="card-depoimento">
+        <div class="aspas">“</div>
+        <p>O sistema de atendimento integrado agilizou nossos processos internos. Recomendo demais!</p>
+        <h4>Consultoria Nexo</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="orcamento reveal from-bottom">
+    <div class="orcamento-conteudo">
+      <h2>
+        Quer modernizar sua empresa?<br>
+        <strong>Solicite um sistema sob medida com especialistas!</strong>
+      </h2>
+      <p>
+        Fale com nossa equipe e descubra como a tecnologia certa pode transformar seu negócio.
+      </p>
+      <a href="#contato" class="btn-orcamento">Solicitar orçamento</a>
+    </div>
+  </section>
+
+  <!-- Contatos -->
+  <section class="contato reveal from-right">
+    <div class="contato-container">
+      <img src="/img/logo-remove.png" alt="Potiguar Tech" class="logo">
+
+      <div class="redes-sociais">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+
+      <h2>Contato</h2>
+      <p><i class="fas fa-envelope"></i> contato@PotiguarTech.com.br</p>
+      <p><i class="fas fa-phone-alt"></i> (84) 9 9999-9999</p>
+
+      <a href="#" class="botao-reuniao">Entre em Contato <span>&rarr;</span></a>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer style="background: #111; color: #ccc; text-align: center; padding: 2rem 1rem;">
+    <p>&copy; 2025 PotiguarTech. Todos os direitos reservados.</p>
+    <p>Desenvolvido por PotiguarTech | <a href="https://wa.me/5584988558716" style="color: #007bff;">WhatsApp</a> | <a href="#" style="color: #007bff;">Instagram</a></p>
+    <a href="#" style="text-decoration: underline;">Politica de Privacidade</a>
   </footer>
+
+  <!-- Script de animação scroll -->
   <script>
-    function setCookie(nome, valor, dias) {
-      const d = new Date();
-      d.setTime(d.getTime() + (dias*24*60*60*1000));
-      document.cookie = nome + "=" + valor + ";path=/;expires=" + d.toUTCString();
-    }
-  
-    function getCookie(nome) {
-      const cname = nome + "=";
-      const decoded = decodeURIComponent(document.cookie);
-      const ca = decoded.split(';');
-      for (let i = 0; i < ca.length; i++) {
-        let c = ca[i].trim();
-        if (c.indexOf(cname) === 0) return c.substring(cname.length, c.length);
-      }
-      return "";
-    }
-  
-    function aceitarCookies() {
-      setCookie("cookies_aceitos", "true", 365);
-      document.getElementById("cookie-banner").style.display = "none";
-    }
-  
-    function rejeitarCookies() {
-      setCookie("cookies_aceitos", "false", 365);
-      document.getElementById("cookie-banner").style.display = "none";
-    }
-  
-    function abrirDefinicoes() {
-    window.location.href = "cookies.html"; // <- Aqui está o caminho
+    const reveals = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    reveals.forEach(el => observer.observe(el));
+
+  //modal
+  function abrirModal(id) {
+    document.getElementById(id).style.display = 'block';
   }
+
+  function fecharModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // Fecha modal ao clicar fora do conteúdo
+  window.onclick = function(event) {
+    document.querySelectorAll('.modal').forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+
+    });
+  }
+  </script>
+  <script>
+    const modal = document.getElementById('modalProjeto');
+    const slides = document.querySelectorAll('.slide');
+    const closeModal = document.querySelector('.close-modal');
+    const nextBtn = document.querySelector('.slider-btn.next');
+    const prevBtn = document.querySelector('.slider-btn.prev');
   
-    if (!getCookie("cookies_aceitos")) {
-      document.getElementById("cookie-banner").style.display = "block";
+    let currentSlide = 0;
+  
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) slide.classList.add('active');
+      });
     }
+  
+    nextBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    });
+  
+    prevBtn.addEventListener('click', () => {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    });
+  
+    closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+    });
+  
+    window.openModalProjeto = function () {
+      modal.style.display = 'flex';
+      currentSlide = 0;
+      showSlide(currentSlide);
+    };
   </script>
   
 </body>
