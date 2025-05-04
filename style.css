@@ -20,6 +20,8 @@ body {
   background-color: var(--secondary);
   color: var(--light);
   line-height: 1.6;
+  overflow-x: hidden;
+  width: 100% !important;
 }
 
 a {
@@ -40,7 +42,11 @@ h2 {
 }
 
 .logo-hero {
+<<<<<<< HEAD
   width: 170px;
+=======
+  width: 20%;
+>>>>>>> b09bd93e5e883297d297f8f6bcb5558a006f6caf
   margin: 0 auto 1.5rem;
   display: block;
 }

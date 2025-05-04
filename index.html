@@ -6,12 +6,13 @@
   <title>PotiguarTech | Soluções Inteligentes</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
 </head>
 <body>
   <!-- Hero -->
   <section class="hero reveal from-bottom">
     <div class="container">
-      <img src="/img/logo-remove.png" alt="Logo PotiguarTech" class="logo-hero">
+      <img src="img/logo-remove.png" alt="Logo PotiguarTech" class="logo-hero">
   
       <div class="hero-title">
         <h1>Desenvolvimento de Sites<br>e Sistemas Sob Medida</h1>
@@ -117,14 +118,14 @@
     <div class="projetos-grid">
       <!-- Projeto 1 -->
       <div class="projeto-card" onclick="abrirModal('modal1')">
-        <img src="/img/logo.jpg" alt="Projeto 1">
+        <img src="img/logo.jpg" alt="Projeto 1">
         <h3>Sistema de Atendimento Integrado</h3>
         <p>Automatização completa de processos internos para empresas de saúde.</p>
       </div>
 
       <!-- Projeto 2 -->
       <div class="projeto-card" onclick="abrirModal('modal2')">
-        <img src="/img/logo.jpg" alt="Projeto 2">
+        <img src="img/logo.jpg" alt="Projeto 2">
         <h3>Plataforma de E-commerce</h3>
         <p>Loja online desenvolvida para alta performance e escalabilidade.</p>
       </div>
@@ -137,8 +138,8 @@
       <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
       <h2>Sistema de Atendimento Integrado</h2>
       <div class="modal-imagens">
-        <img src="/img/logo.jpg" alt="Imagem 1">
-        <img src="/img/logo.jpg" alt="Imagem 2">
+        <img src="img/logo.jpg" alt="Imagem 1">
+        <img src="img/logo.jpg" alt="Imagem 2">
       </div>
       <p>Este sistema permite o agendamento, triagem e atendimento com relatórios gerenciais integrados.</p>
     </div>
@@ -150,8 +151,8 @@
       <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
       <h2>Plataforma de E-commerce</h2>
       <div class="modal-imagens">
-        <img src="/img/logo.jpg" alt="Imagem 1">
-        <img src="/img/logo.jpg" alt="Imagem 2">
+        <img src="img/logo.jpg" alt="Imagem 1">
+        <img src="img/logo.jpg" alt="Imagem 2">
       </div>
       <p>Uma plataforma robusta com carrinho otimizado, meios de pagamento integrados e painel de controle completo.</p>
     </div>
@@ -165,11 +166,11 @@
     <span class="close-modal">&times;</span>
     <div class="slider-container">
       <div class="slider">
-        <img src="/img/logo.jpg" alt="Imagem 1" class="slide active">
-        <img src="/img/logo.jpg" alt="Imagem 2" class="slide">
-        <img src="/img/logo.jpg" alt="Imagem 3" class="slide">
-        <img src="/img/logo.jpg" alt="Imagem 4" class="slide">
-        <img src="/img/logo.jpg" alt="Imagem 5" class="slide">
+        <img src="img/logo.jpg" alt="Imagem 1" class="slide active">
+        <img src="img/logo.jpg" alt="Imagem 2" class="slide">
+        <img src="img/logo.jpg" alt="Imagem 3" class="slide">
+        <img src="img/logo.jpg" alt="Imagem 4" class="slide">
+        <img src="img/logo.jpg" alt="Imagem 5" class="slide">
       </div>
       <button class="slider-btn prev">&#10094;</button>
       <button class="slider-btn next">&#10095;</button>
@@ -231,19 +232,19 @@
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
 
-      <h2>Contato</h2>
-      <p><i class="fas fa-envelope"></i> contato@PotiguarTech.com.br</p>
+      <h2 id="contato">Contato</h2>
+      <p ><i class="fas fa-envelope" ></i> <span id="email-contato">contato@PotiguarTech.com.br</span></p>
       <p><i class="fas fa-phone-alt"></i> (84) 9 9999-9999</p>
 
-      <a href="#" class="botao-reuniao">Entre em Contato <span>&rarr;</span></a>
+      <a href="#" class="botao-reuniao" target="_blank" >Entre em Contato <span>&rarr;</span></a>
     </div>
   </section>
 
   <!-- Rodapé -->
   <footer style="background: #f9f9f9; color: #000000; text-align: center; padding: 2rem 1rem;">
     <p>&copy; 2025 PotiguarTech. Todos os direitos reservados.</p>
-    <p>Desenvolvido por PotiguarTech | <a href="https://wa.me/5584988558716" style="color: #007bff;">WhatsApp</a> | <a href="#" style="color: #007bff;">Instagram</a></p>
-    <a href="#" style="text-decoration: underline;">Politica de Privacidade</a>
+    <p>Desenvolvido por PotiguarTech | <a href="https://wa.me/5584988558716" target="_blank" style="color: #007bff;">WhatsApp</a> | <a href="#"  target="_blank" style="color: #007bff;">Instagram</a></p>
+    <a href="#" target="_blank" style="text-decoration: underline;">Politica de Privacidade</a>
   </footer>
 
   <!-- Script de animação scroll -->
@@ -317,6 +318,18 @@
       currentSlide = 0;
       showSlide(currentSlide);
     };
+
+     // Função para abrir cliente de e-mail ao clicar no endereço
+     document.getElementById('email-contato').addEventListener('click', function() {
+        const email = this.textContent;
+        window.location.href = `mailto:${email}`;
+    });
+
+    // Opcional: Estilo para parecer clicável
+    const emailElement = document.getElementById('email-contato');
+    emailElement.style.cursor = 'pointer';
+    emailElement.style.textDecoration = 'underline';
+    emailElement.style.color = 'white';
   </script>
   
 </body>

@@ -1,0 +1,49 @@
+/* Responsividade para Modal com Slider (#modalProjeto) */
+@media (max-width: 768px) and (min-width: 480px) {
+    
+}
+
+@media (max-width: 480px) {
+    #modalProjeto {
+      padding: 0;
+  
+      .modal-content {
+          width: 100%;
+          position: relative;
+          padding: 15px;
+          /* Remova o z-index: -1 ou defina como um valor positivo */
+          z-index: 1;
+          overflow: visible;
+
+          .close-modal {
+            z-index: 9999;
+          }
+
+          .slider-container {
+            overflow: visible;
+          }
+  
+          .slider-btn {
+              width: 50px;
+              height: 50px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+  
+          .prev {
+              position: absolute;
+              left: -15px;
+              /* Adicione um z-index maior que o do modal-content */
+              z-index: 9999;
+          }
+
+          .next {
+              position: absolute;
+              right: -15px;
+              /* Adicione um z-index maior que o do modal-content */
+              z-index: 9999;
+          }
+      }
+    }
+  }
