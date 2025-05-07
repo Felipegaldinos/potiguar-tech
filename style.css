@@ -135,11 +135,12 @@ h2 {
   font-size: 0.95rem;
   color:#003d80;
 }
-
+/*
 .imagem-servico img {
   max-width: 100%;
   border-radius: 12px;
-}
+}*/
+
 /* numeros*/
 .nossos-numeros {
   background: linear-gradient(135deg, #0A1733, #003d80); /* Suas cores base */
