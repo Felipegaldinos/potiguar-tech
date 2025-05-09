@@ -42,11 +42,11 @@ h2 {
 }
 
 .logo-hero {
-<<<<<<< HEAD
+
   width: 170px;
-=======
+
   width: 20%;
->>>>>>> b09bd93e5e883297d297f8f6bcb5558a006f6caf
+
   margin: 0 auto 1.5rem;
   display: block;
 }
@@ -302,6 +302,88 @@ h2 {
 .fechar:hover {
   color: #fff;
 }
+.projeto-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(17, 17, 17, 0.9);
+  justify-content: center;
+  align-items: center;
+}
+
+.projeto-modal-content {
+  background: #1a1a1a;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 800px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 0 20px #007bff;
+  color: #fff;
+}
+
+.projeto-fechar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.projeto-slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.projeto-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.projeto-slide {
+  min-width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.projeto-slide.active {
+  display: flex;
+}
+
+.projeto-slide img {
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.projeto-slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #cdd4dc16;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.projeto-slider-btn.prev {
+  left: 10px;
+}
+
+.projeto-slider-btn.next {
+  right: 10px;
+}
+
 /*novo modal*/
 .modal {
   display: none;
@@ -360,7 +442,7 @@ h2 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #305e90;
+  background: #cdd4dc16;
   color: #111;
   border: none;
   font-size: 2rem;
@@ -376,7 +458,6 @@ h2 {
 .slider-btn.next {
   right: 10px;
 }
-
 /*depoimentos*/
 .clientes-dizem {
   background: linear-gradient(135deg, #0A1733, #003d80);
@@ -649,12 +730,25 @@ h2 {
   .contato-section .redes-sociais a {
     margin: 6px;
   }
-}
-.logo-numeros {
+  .projeto-modal-content {
+    padding: 1rem;
+  }
+
+  .projeto-slide img {
+    max-width: 100%;
+  }
+
+  .projeto-slider-btn {
+    font-size: 1.5rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  }
+  .logo-numeros {
   max-width: 180px;
   margin-bottom: 10px;
-}
-.logo-hero {
+  }
+   .logo-hero {
   width: 200px;
   margin: 0 auto 1.5rem;
   display: block;
@@ -693,6 +787,13 @@ h2 {
     width: 200px;
     margin: 0 auto 1.5rem;
     display: block;
+  }
+   .projeto-modal-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .projeto-slider-btn {
+    display: none; /* esconde os botões em telas muito pequenas */
   }
 
 
