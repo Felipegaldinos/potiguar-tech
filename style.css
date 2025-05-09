@@ -792,10 +792,6 @@ h2 {
     font-size: 1.2rem;
   }
 
-  .projeto-slider-btn {
-    display: none; /* esconde os botões em telas muito pequenas */
-  }
-
 
   footer {
     flex-direction: column;
