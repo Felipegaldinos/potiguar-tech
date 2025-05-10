@@ -1,7 +1,8 @@
 :root {
-  --primary:  #0A1733, #003d80;
+  --primary: #003d80;
   --secondary: #f9f9f9;
   --light: #1a1a1a;
+   --hero-gradient: linear-gradient(to bottom, #0056b3, #003d80);
 }
 @font-face {
   font-family: 'MinhaFonte';
@@ -17,7 +18,7 @@
 
 body {
   font-family: 'MinhaFonte', sans-serif;
- 
+  background-color: var(--secondary);
   color: var(--light);
   line-height: 1.6;
   overflow-x: hidden;
@@ -35,7 +36,7 @@ h2 {
 .hero {
   text-align: center;
   padding: 5rem 2rem 0;
-  background: linear-gradient(to bottom, #0056b3, #003d80);
+   background: var(--hero-gradient);
   position: relative;
   overflow: hidden;
   color: #fff;
