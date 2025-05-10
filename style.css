@@ -36,18 +36,17 @@ h2 {
 .hero {
   text-align: center;
   padding: 5rem 2rem 0;
-   background: var(--hero-gradient);
+  background: var(--hero-gradient);
   position: relative;
   overflow: hidden;
   color: #fff;
+  margin: 0;
 }
 
 .logo-hero {
 
   width: 170px;
-
   width: 20%;
-
   margin: 0 auto 1.5rem;
   display: block;
 }
