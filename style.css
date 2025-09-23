@@ -2,7 +2,7 @@
   --primary: #003d80;
   --secondary: #f9f9f9;
   --light: #1a1a1a;
-   --hero-gradient: linear-gradient(to bottom, #0056b3, #003d80);
+  --hero-gradient: linear-gradient(to bottom, #0056b3, #003d80);
 }
 @font-face {
   font-family: 'MinhaFonte';
@@ -623,13 +623,11 @@ h2 {
   font-weight: bold;
   font-size: 16px;
   text-decoration: none;
-  transition: background 0.2s;
+  
 }
 
 .botao-reuniao:hover {
-  background-color: #1c1c1c;
-  transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.2);
+  background: linear-gradient(135deg, #f9f9f9,  #003d80)
 }
 
 /*botao hero*/
