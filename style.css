@@ -41,14 +41,18 @@ h2 {
   overflow: hidden;
   color: #fff;
   margin: 0;
+  min-height: 100vh; /* Garante altura mínima para ocupar a tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem; /* Remove o padding do topo para centralizar melhor */
 }
 
+/* Remova estas regras, elas podem causar problemas */
 .logo-hero {
-
-  width: 170px;
-  width: 20%;
-  margin: 0 auto 1.5rem;
-  display: block;
+  /* Remova o width de 20% e use um valor fixo ou relativo à tela */
+  width: clamp(150px, 20vw, 200px); /* Usa clamp() para ajustar o tamanho */
 }
 
 .hero-title {
@@ -687,6 +691,13 @@ h2 {
 
 /* Tablet - até 768px */
 @media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .logo-hero {
+    width: clamp(150px, 40vw, 200px); /* Ajuste de largura responsivo */
+  }
   .sessao, .container {
     padding: 40px 20px;
     flex-direction: column;
